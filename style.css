@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #00ff88;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .message {
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    text-shadow: 0 0 4px #00ff88;
+  }
+  
+  .terminal-cursor {
+    display: inline-block;
+    width: 10px;
+    background: #00ff88;
+    animation: blink 1s infinite;
+    height: 1em;
+    vertical-align: bottom;
+  }
+  
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+  
